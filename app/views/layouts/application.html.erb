@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheGossipProject</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+      <!-- Bootstrap Static Header -->
+      <div style="background-size: cover; background-repeat: no-repeat; background-image: url(https://images.healthshots.com/healthshots/en/uploads/2021/08/13105537/gossiping-2-770x433.jpg)" class="mx-auto d-block jumbotron bg-cover text-white">
+
+          <div class="container py-5 text-center">
+              <h1 class="display-4 text-black font-weight-bold bg-white mb-5">Gossip Project</h1>
+              <a href="http://localhost:3000/home" role="button" class="btn btn-light px-5">Accueil</a>
+              <a href="http://localhost:3000/team" role="button" class="btn btn-light px-5">Team</a>
+              <a href="http://localhost:3000/contact" role="button" class="btn btn-light px-5">Contact</a>
+              
+          </div>
+      </div>
+    <%= yield %>
+  </body>
+</html>

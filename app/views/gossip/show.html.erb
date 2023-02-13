@@ -1,0 +1,13 @@
+<h1>Gossip n°<%= params[:id_gossip] %></h1>
+
+<body>
+	<h3>Voici le gossip</h3>
+		<p> 
+			<br> L'auteur : <a href="/user/<%= @gossip.user.id %>"><%= @gossip.user.first_name%> <%= @gossip.user.last_name %> </a></br>
+			<br>Le titre : <%= @gossip.title %></br>
+			<br>Le contenu : <%= @gossip.content %></br>
+			<br>Créé le : <%= @gossip.created_at %> </br>
+		
+		</p>
+
+</body>
