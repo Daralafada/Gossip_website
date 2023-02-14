@@ -2,6 +2,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
 
 	<style>
 		h1, h4 {
@@ -19,8 +20,8 @@
 				<div class="card text-black bg-warning mb-3 text-center" style = "width:23%">
 					<div class="card-header bg-white mb-1">Gossip n°<%= gossip.id%></div>
 			  		<div class="card-body">
-			   			<h6 class="card-subtitle mb-2 text-white" style="font-family: 'Amatic SC', cursive;"><%= gossip.title%></h6>
-			    		<p class="card-text text-truncate"> <%= gossip.content%></p>
+			   			<h6 class="card-subtitle mb-2 text-white" style="font-family: 'Amatic SC', cursive; font-size: 25px;"><%= gossip.title%></h6>
+			    		<p class="card-text text-truncate" style="font-family: 'Oooh Baby', cursive;"> <%= gossip.content%></p>
 			    	<div class="card-footer">
 			    		<a 
 			    			href=http://localhost:3000/gossip/<%= gossip.id%> 
