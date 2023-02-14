@@ -8,4 +8,4 @@ $rails db:migrate
 $rails db:seed
 $rails server
 
-se rendre sur l'adresse http://localhost:3000/home
+se rendre sur l'adresse http://localhost:3000/
