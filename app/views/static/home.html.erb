@@ -1,7 +1,7 @@
 <h1 class="text-center">Bienvenue sur mon site de gossip pour le projet THP</h1>
 
 <body>
-	<h4 class= "text-center mb-4"> Enjoy la lecture :) </h4>
+	<h4 class= "text-center bg-warning text-light mb-4"> Enjoy la lecture :) </h4>
 
 		<div class="card-deck d-flex flex-wrap justify-content-around ">
 				<% @gossips.each do |gossip| %>
@@ -9,13 +9,13 @@
 					<div class="card-header bg-white mb-1">Gossip n°<%= gossip.id%></div>
 			  		<div class="card-body">
 			   			<h6 class="card-subtitle mb-2 text-white"><%= gossip.title%></h6>
-			    		<p class="card-text"><%= gossip.content%></p>
+			    		<p class="card-text text-truncate"><%= gossip.content%></p>
 			    	<div class="card-footer">
 			    		<a 
 			    			href=http://localhost:3000/gossip/<%= gossip.id%> 
 			    			class="btn btn-light px-5" 
 			    			role="button">
-			    			Lien</a>
+			    			Lire la suite</a>
 			    	</div>
 		    	</div>
 				</div>
